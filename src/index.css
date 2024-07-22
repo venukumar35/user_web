@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-text-input input:focus,
+.custom-text-input:focus-within input {
+  outline: 1px solid black;
+  outline-offset: -1px;
+}
+.custom-text-input-for-pin input:focus,
+.custom-text-input:focus-within input {
+  outline: 1px solid #7787a5;
+  outline-offset: -1px;
+}
+
+.pinInput input {
+  border-color: black;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  position: relative;
+  width: 100%;
+}
+
+.carousel-indicators button {
+  width: 4px;
+  height: 4px;
+  background-color: #ccc;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-indicators button.active {
+  background-color: #21a931;
+}
+.carousel-indicators .mantine-Carousel-control {
+  display: none;
+}
+.smallText {
+  font-size: x-small;
+}
+.spacething > :not([hidden]) ~ :not([hidden]) {
+  --tw-spacething-reverse: 0;
+  margin-right: calc(0.025rem /* 0.5px */ * var(--tw-spacething-reverse));
+  margin-left: calc(
+    0.025rem /* 0.5px */ * calc(1 - var(--tw-spacething-reverse))
+  );
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.hover-lighten:hover {
+  filter: brightness(
+    1.8
+  ); /* Adjust the value to achieve the desired lightening effect */
+}
+.border-1 {
+  border-width: 1px;
+}
